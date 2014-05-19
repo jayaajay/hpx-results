@@ -44,7 +44,8 @@ plot "./mpi.xx" using 1:2 title "MPI" w lp ls 1,\
      "./omp.xx" using 1:2 title "OMP" w lp ls 2,\
      "./hpx.xx" using 1:2 title "HPX-Parcels" w lp ls 3,\
      "./hpx-chan-sync.xx" using 1:2 title "HPX-Channels (sync)" w lp ls 4,\
-     "./hpx-chan.xx" using 1:2 title "HPX-Channels (async)" w lp ls 5
+     "./hpx-chan.xx" using 1:2 title "HPX-Channels (async)" w lp ls 5,\
+     "./hpx-chan-1copy.xx" using 1:2 title "HPX-Channels (1copy, sync)" w lp ls 6
 #     "./hpx-jemalloc.xx" using 1:2 title "HPX-Parcels (jemalloc)" w lp ls 4
 #     "./hpx-chan-jemalloc.xx" using 1:2 title "HPX-Channels (async, jemalloc)" w lp ls 7
 

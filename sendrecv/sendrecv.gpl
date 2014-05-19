@@ -1,0 +1,50 @@
+#!/usr/bin/env gnuplot
+
+set terminal pdfcairo font "Inconsolata,12" lw 4 rounded
+set output 'sendrecv.pdf'
+set pointsize 0.6
+
+set style line 80 lw 0.5 lt rgb "#808080"
+
+# Line style for grid
+set style line 81 lt 0  # dashed
+set style line 81 lt rgb "#808080"  # grey
+
+set grid xtics ytics back ls 81
+set border 3 back ls 80
+
+#set xtics nomirror
+#set ytics nomirror
+
+set log x
+set log y
+set mxtics 10    # Makes logscale look good.
+set mytics 10    # Makes logscale look good.
+#set yrange [50:2500]
+set key top left
+#set key bmargin center horizontal Right enhanced autotitles nobox
+
+# Line styles: try to pick pleasing colors, rather
+# than strictly primary colors or hard-to-see colors
+# like gnuplot's default yellow.  Make the lines thick
+# so they're easy to see in small plots in papers.
+set style line 1 lt 1 lw 0.7 ps 0.5
+set style line 2 lt 2 lw 0.7 ps 0.5
+set style line 5 lt 3 lw 0.7 ps 0.5
+set style line 4 lt 4 lw 0.7 ps 0.5
+set style line 5 lt rgb "#722102" lw 0.7 ps 0.5
+set style line 6 lt rgb "#2F2D02" lw 0.7 ps 0.5
+set style line 7 lt rgb "#0F20F2" lw 0.7 ps 0.5
+
+set title "sendrecv overlap delay 100 us"
+set xlabel "Message Size"
+set ylabel "Execution Time"
+
+plot "./mpi.xx" using 1:2 title "MPI" w lp ls 1,\
+     "./omp.xx" using 1:2 title "OMP" w lp ls 2,\
+     "./hpx.xx" using 1:2 title "HPX-Parcels" w lp ls 3,\
+     "./hpx-chan-sync.xx" using 1:2 title "HPX-Channels (sync)" w lp ls 4,\
+     "./hpx-chan.xx" using 1:2 title "HPX-Channels (async)" w lp ls 5
+#     "./hpx-jemalloc.xx" using 1:2 title "HPX-Parcels (jemalloc)" w lp ls 4
+#     "./hpx-chan-jemalloc.xx" using 1:2 title "HPX-Channels (async, jemalloc)" w lp ls 7
+

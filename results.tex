@@ -1,6 +1,8 @@
 \documentclass[10pt]{article}
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{fullpage}
 \usepackage[margin=0.4in]{geometry}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
@@ -30,6 +32,34 @@
 \includegraphics[scale=0.8]{cutter/plots/par}
 \caption{Parallel Spawn}
 \label{fig:par}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\includegraphics[width=\textwidth]{cutter/plots/put_latency_small}
+\label{fig:put-small}
+\end{subfigure}%
+\begin{subfigure}[b]{0.45\textwidth}
+\includegraphics[width=\textwidth]{cutter/plots/put_latency_large}
+\label{fig:put-large}
+\end{subfigure}%
+\caption{Memput}
+\label{fig:memput}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\includegraphics[width=\textwidth]{cutter/plots/get_latency_small}
+\label{fig:get-small}
+\end{subfigure}%
+\begin{subfigure}[b]{0.45\textwidth}
+\includegraphics[width=\textwidth]{cutter/plots/get_latency_large}
+\label{fig:get-large}
+\end{subfigure}%
+\caption{Memget}
+\label{fig:memget}
 \end{figure}
 
 \end{document}

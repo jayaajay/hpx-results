@@ -1,0 +1,31 @@
+set grid
+set logscale y
+set log x 2
+set key samplen 2 spacing .8 font ",14" noreverse enhanced autotitles nobox
+set ylabel "Harmonic means TEPS"
+set xlabel "Number of Nodes"
+#set style data linespoints
+set term post eps enhanced color 24
+#set style line 1 linetype 1 lw 4 ps 2
+#set style line 2 linetype 2 lw 4 ps 2
+#set style line 3 linetype 3 lw 4 ps 2
+#set style line 4 linetype 4 lw 4 ps 2
+#set style line 5 linetype 5 lw 4 ps 2
+#set style line 6 linetype 6 lw 4 ps 2
+#set style line 7 linetype 7 lw 4 ps 2
+#set style line 8 linetype 8 lw 4 ps 2
+#set style line 9 linetype 9 lw 4 ps 2
+#set style line 10 linetype 1 lw 4 ps 2 lc 3
+#set style line 11 linetype 2 lw 4 ps 2 lc 4
+#set style line 12 linetype 3 lw 4 ps 2 lc 5
+set xtics nomirror
+set ytics nomirror
+set mxtics 2
+#set yrange [1:1000]
+#set logscale x 2
+#set xrange [2:16]
+#set xtics (2, 4, 8, 10, 12, 14, 16) font ",16" 
+#set key left top opaque
+#set logscale y
+set key width -4
+plot for [IDX=0:21] "results.dat" i IDX u 2:3 with lp title columnheader(1)

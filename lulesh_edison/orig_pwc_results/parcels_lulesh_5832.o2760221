@@ -1,0 +1,141 @@
+-l mppwidth=5832
+Setting job launcher to  aprun
+nodes, cores_per_node =  243 24
+mpi 
+
+Elapsed time = 8.514966e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  500 
+   Final Origin Energy = 1.235465e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 3.492460e-10
+        TotalAbsDiff = 2.333912e-09
+        MaxRelDiff   = 1.344452e-12
+
+Application 11903831 resources: utime ~356940s, stime ~141851s, Rss ~100656, inblocks ~1631128, outblocks ~188197
+
+
+85.14966 1235465.0 3.49246e-10 2.333912e-09 1.344452e-12
+mpi 
+
+Elapsed time = 8.525395e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  500 
+   Final Origin Energy = 1.235465e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 3.492460e-10
+        TotalAbsDiff = 2.333912e-09
+        MaxRelDiff   = 1.344452e-12
+
+Application 11903843 resources: utime ~356476s, stime ~142883s, Rss ~100616, inblocks ~1630778, outblocks ~188197
+
+
+85.25395 1235465.0 3.49246e-10 2.333912e-09 1.344452e-12
+mpi 
+
+Elapsed time = 8.523878e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  500 
+   Final Origin Energy = 1.235465e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 3.492460e-10
+        TotalAbsDiff = 2.333912e-09
+        MaxRelDiff   = 1.344452e-12
+
+Application 11903850 resources: utime ~357722s, stime ~141703s, Rss ~100452, inblocks ~1631159, outblocks ~188198
+
+
+85.23878 1235465.0 3.49246e-10 2.333912e-09 1.344452e-12
+mpi 
+
+Elapsed time = 8.489894e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  500 
+   Final Origin Energy = 1.235465e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 3.492460e-10
+        TotalAbsDiff = 2.333912e-09
+        MaxRelDiff   = 1.344452e-12
+
+Application 11903874 resources: utime ~355953s, stime ~141875s, Rss ~100640, inblocks ~1630416, outblocks ~188197
+
+
+84.89894 1235465.0 3.49246e-10 2.333912e-09 1.344452e-12
+mpi 
+
+Elapsed time = 8.522977e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  500 
+   Final Origin Energy = 1.235465e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 3.492460e-10
+        TotalAbsDiff = 2.333912e-09
+        MaxRelDiff   = 1.344452e-12
+
+Application 11903885 resources: utime ~356805s, stime ~142289s, Rss ~100532, inblocks ~1630471, outblocks ~188197
+
+
+85.22977 1235465.0 3.49246e-10 2.333912e-09 1.344452e-12
+Command = {aprun -n 5832 -N 24 -d 1 ./lulesh/mpi/luleshMPI 48 500}
+Average for MPI over  5  =  85.15422
+hpx  Number of domains: 5832 nx: 48 maxcycles: 500 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 1.609662e+02
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 500 
+  Final Origin Energy = 1.235465e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 1.236913e-10
+  TotalAbsDiff = 1.722025e-09
+  MaxRelDiff   = 1.350307e-12
+
+END_LOG
+
+time_in_SBN3 = 7.505634e+01
+time_in_PosVel = 1.823775e+01
+time_in_MonoQ = 3.664346e+01
+ Elapsed: 161105
+Application 11903901 resources: utime ~717722s, stime ~166408s, Rss ~3897000, inblocks ~432905, outblocks ~285525
+
+
+160.9662 1235465.0 1.236913e-10 1.722025e-09 1.350307e-12
+Traceback (most recent call last):
+  File "scripts/run_lulesh.py", line 238, in <module>
+    run_lulesh_size(domains)
+  File "scripts/run_lulesh.py", line 189, in run_lulesh_size
+    if value != compval:
+NameError: global name 'compval' is not defined
+
+ + --------------------------------------------------------------------------
+ +        Job name: parcels_lulesh_5832
+ +          Job Id: 2760221.edique02
+ +          System: edison
+ +     Queued Time: Mon Apr 20 07:03:09 2015
+ +      Start Time: Mon Apr 20 07:03:45 2015
+ + Completion Time: Mon Apr 20 07:15:08 2015
+ +            User: benjmart
+ +        MOM Host: nid01281
+ +           Queue: reg_small
+ +  Req. Resources: mppnodect=243,mppnppn=24,mppwidth=5832,walltime=01:00:00
+ +  Used Resources: cput=00:00:01,energy_used=0,mem=15916kb,vmem=195656kb,walltime=00:11:25
+ +     Acct String: xpress
+ +   PBS_O_WORKDIR: /global/u1/b/benjmart/psaap_perf
+ +     Submit Args: run_parcels_lulesh_5832.sh
+ + --------------------------------------------------------------------------
+

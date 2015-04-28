@@ -1,0 +1,15 @@
+All these runs were done with commit verision
+f74a7c9a11cd6fea1b29e206731894b2a23de91f,
+except for the probe_time runs which were based off a fork of develop
+from commit 48e9ffe618798feaa854c6323143ae6eee646348.
+
+halfcore is the same as isir_cf_pwc except I capped the number of
+cores at 12 for hpx.
+
+isir_cf_pwc are the main results of interest.
+
+orig_pwc_results was the most up to date run before we started
+measuring isir in addition to pwc.
+
+probe_time is with some added code to measure the amount of time spent
+in the local and remote probe for pwc.

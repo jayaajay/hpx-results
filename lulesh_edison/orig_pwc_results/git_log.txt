@@ -1,0 +1,100 @@
+commit f74a7c9a11cd6fea1b29e206731894b2a23de91f
+Author: jayaajay <jayaajay@indiana.edu>
+Date:   Fri Apr 17 11:21:32 2015 -0400
+
+    reverting bd2ff492
+
+commit bd2ff49226b3c1a5c7232aaa85078e6f5820a941
+Author: jayaajay <jayaajay@indiana.edu>
+Date:   Fri Apr 17 10:48:08 2015 -0400
+
+    Bug fix to lco_reduce
+
+commit eaad24dd8a1791ca258ae5e38bcc97a4378d79d2
+Author: jayaajay <jayaajay@indiana.edu>
+Date:   Fri Apr 17 09:26:46 2015 -0400
+
+    fixing a erraneous free
+
+commit 84e3b34a3ab7aa0e9fc919c34252a648d13c36ef
+Author: jayaajay <jayaajay@indiana.edu>
+Date:   Fri Apr 17 08:00:58 2015 -0400
+
+    Reverting "hpx-343 testcase with getref and release for reduce LCO"
+    
+    This reverts commit 21362b8f6bb37f1c971039a715e79904ce43dba9.
+
+commit 63f038d14de763a1044c9bd3bc07ca3b2a85b786
+Merge: 21362b8 38ef05a
+Author: jayaajay <jayaajay@indiana.edu>
+Date:   Thu Apr 16 20:20:38 2015 -0400
+
+    Merge branch 'develop' of gitlab.crest.iu.edu:extreme/hpx into develop
+
+commit 21362b8f6bb37f1c971039a715e79904ce43dba9
+Author: jayaajay <jayaajay@indiana.edu>
+Date:   Thu Apr 16 20:20:24 2015 -0400
+
+    hpx-343 testcase with getref and release for reduce LCO
+
+commit 38ef05a1d4e7aff647510eb0af0e053924d16ddb
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Thu Apr 16 17:07:11 2015 -0400
+
+    minor bug fix
+
+commit 77ec181a1acbd94167a95e686e0402b19679284f
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Thu Apr 16 15:48:02 2015 -0400
+
+    testing the script
+
+commit 229a53ebca98e61bb1dc5ece8e9882fba124d6f8
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Thu Apr 16 15:06:51 2015 -0400
+
+    testing the script
+
+commit 80668180d2e50690360249e6d5766d7d45fc31ab
+Author: Ezra Kissel <ezkissel@indiana.edu>
+Date:   Thu Apr 16 10:41:22 2015 -0400
+
+    Allow user and pwfile to be set as arguments to login script.
+
+commit 8882de878eba8a8b14270cd61646723252cfd235
+Author: Ezra Kissel <ezkissel@indiana.edu>
+Date:   Thu Apr 16 10:17:50 2015 -0400
+
+    Adding a cswarm login expect script.  Fill in appropriate user/password info.
+
+commit 6d15b3f32c95797225ec04079556af5c04fa3422
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Wed Apr 15 23:03:48 2015 -0400
+
+    fixing the script file
+
+commit 964f2b1082398238b585fe39bc24fc393fe25cd2
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Wed Apr 15 21:54:25 2015 -0400
+
+    fixing the script file
+
+commit 20634b8b9b109eae0e5404a957703463d8b0440f
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Wed Apr 15 21:51:26 2015 -0400
+
+    fixing the script file
+
+commit b206456c65c4280748dd838927cf1154382dacd5
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Wed Apr 15 20:19:01 2015 -0400
+
+    fixing the jenkins script
+
+commit 64c1865e3a44d2c9148da22eb4d641e18a1e673a
+Author: jajaycan <jayaajay@indiana.edu>
+Date:   Wed Apr 15 20:05:03 2015 -0400
+
+    fixing the jenkins script
+
+commit 2b678cebc30b9f033dcc850becf73a686215de81

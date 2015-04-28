@@ -1,0 +1,386 @@
+-l mppwidth=1000
+Setting job launcher to  aprun
+HPX nodes, cores_per_node =  42 12
+HPX nodes, cores_per_node =  42 12
+MPI cores_per_node =  24
+mpi 
+
+Elapsed time = 1.741872e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  100 
+   Final Origin Energy = 4.494319e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 6.402843e-10
+        TotalAbsDiff = 2.095173e-09
+        MaxRelDiff   = 2.250887e-13
+
+Application 11985438 resources: utime ~12921s, stime ~4926s, Rss ~92356, inblocks ~276092, outblocks ~32148
+
+
+17.41872 4494319.0 6.402843e-10 2.095173e-09 2.250887e-13
+mpi 
+
+Elapsed time = 1.750674e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  100 
+   Final Origin Energy = 4.494319e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 6.402843e-10
+        TotalAbsDiff = 2.095173e-09
+        MaxRelDiff   = 2.250887e-13
+
+Application 11985460 resources: utime ~13420s, stime ~4882s, Rss ~92676, inblocks ~276806, outblocks ~32148
+
+
+17.50674 4494319.0 6.402843e-10 2.095173e-09 2.250887e-13
+mpi 
+
+Elapsed time = 1.729729e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  100 
+   Final Origin Energy = 4.494319e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 6.402843e-10
+        TotalAbsDiff = 2.095173e-09
+        MaxRelDiff   = 2.250887e-13
+
+Application 11985476 resources: utime ~13391s, stime ~4925s, Rss ~92620, inblocks ~276607, outblocks ~32148
+
+
+17.29729 4494319.0 6.402843e-10 2.095173e-09 2.250887e-13
+mpi 
+
+Elapsed time = 1.741552e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  100 
+   Final Origin Energy = 4.494319e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 6.402843e-10
+        TotalAbsDiff = 2.095173e-09
+        MaxRelDiff   = 2.250887e-13
+
+Application 11985483 resources: utime ~13252s, stime ~4919s, Rss ~92940, inblocks ~276747, outblocks ~32148
+
+
+17.41552 4494319.0 6.402843e-10 2.095173e-09 2.250887e-13
+mpi 
+
+Elapsed time = 1.740407e+01
+
+Run completed:  
+   Problem size        =  48 
+   Iteration count     =  100 
+   Final Origin Energy = 4.494319e+06 
+   Testing Plane 0 of Energy Array:
+        MaxAbsDiff   = 6.402843e-10
+        TotalAbsDiff = 2.095173e-09
+        MaxRelDiff   = 2.250887e-13
+
+Application 11985489 resources: utime ~13021s, stime ~4920s, Rss ~92676, inblocks ~276153, outblocks ~32148
+
+
+17.40407 4494319.0 6.402843e-10 2.095173e-09 2.250887e-13
+Command = {aprun -n 1000 -N 24 -d 1 ./lulesh/mpi/luleshMPI 48 100}
+Average for MPI over  5  =  17.408468
+hpx-isir  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.860946e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.702842e+01
+time_in_PosVel = 2.124293e+00
+time_in_MonoQ = 1.072785e+01
+ Elapsed: 38711.3
+Application 11985498 resources: utime ~16995s, stime ~1963s, Rss ~2137660, inblocks ~1966783, outblocks ~60400
+
+
+38.60946 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-isir  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.849183e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.735663e+01
+time_in_PosVel = 1.846993e+00
+time_in_MonoQ = 1.032400e+01
+ Elapsed: 38589.7
+Application 11985517 resources: utime ~17021s, stime ~1898s, Rss ~2035668, inblocks ~1978789, outblocks ~60339
+
+
+38.49183 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-isir  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.872982e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.767505e+01
+time_in_PosVel = 2.134375e+00
+time_in_MonoQ = 9.953962e+00
+ Elapsed: 38832.7
+Application 11985529 resources: utime ~17146s, stime ~1899s, Rss ~2064208, inblocks ~1937649, outblocks ~60172
+
+
+38.72982 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-isir  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.858446e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.725158e+01
+time_in_PosVel = 1.813005e+00
+time_in_MonoQ = 1.045525e+01
+ Elapsed: 38676.3
+Application 11985564 resources: utime ~17066s, stime ~1923s, Rss ~2027168, inblocks ~1945262, outblocks ~60255
+
+
+38.58446 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-isir  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.875845e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.736691e+01
+time_in_PosVel = 2.458886e+00
+time_in_MonoQ = 1.088387e+01
+ Elapsed: 38880
+Application 11985586 resources: utime ~17040s, stime ~2005s, Rss ~1987648, inblocks ~1949580, outblocks ~60118
+
+
+38.75845 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+Command = {aprun -n 42 -N 1 -d 12 ./lulesh/parcels/luleshparcels --hpx-threads=12 --hpx-network=isir -n 1000 -x 48 -i 100}
+HPX ISIR Average over  5  =  38.634804
+HPX ISIR Ratio of (MPI time)/(hpx time) =  0.450590301946
+hpx-pwc  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.875502e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.930447e+01
+time_in_PosVel = 1.740488e+00
+time_in_MonoQ = 1.140693e+01
+ Elapsed: 38822.6
+Application 11985610 resources: utime ~15805s, stime ~3290s, Rss ~2820028, inblocks ~72646, outblocks ~49351
+
+
+38.75502 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-pwc  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.841428e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.962717e+01
+time_in_PosVel = 1.922686e+00
+time_in_MonoQ = 1.074939e+01
+ Elapsed: 38483.4
+Application 11985622 resources: utime ~15722s, stime ~3208s, Rss ~2872088, inblocks ~72635, outblocks ~49352
+
+
+38.41428 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-pwc  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.855716e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.906231e+01
+time_in_PosVel = 2.020172e+00
+time_in_MonoQ = 1.224603e+01
+ Elapsed: 38630.5
+Application 11985651 resources: utime ~15763s, stime ~3243s, Rss ~2884920, inblocks ~72641, outblocks ~49352
+
+
+38.55716 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-pwc  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.925956e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.954892e+01
+time_in_PosVel = 1.806061e+00
+time_in_MonoQ = 1.074843e+01
+ Elapsed: 39328.3
+Application 11985685 resources: utime ~15977s, stime ~3368s, Rss ~2899292, inblocks ~72643, outblocks ~49352
+
+
+39.25956 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+hpx-pwc  Number of domains: 1000 nx: 48 maxcycles: 100 core-major ordering: 1
+
+
+START_LOG
+PROGNAME: lulesh-parcels
+
+Elapsed time = 3.920250e+01
+
+Run completed:  
+  Problem size = 48 
+  Iteration count = 100 
+  Final Origin Energy = 4.494319e+06
+  Testing plane 0 of energy array:
+  MaxAbsDiff   = 5.238689e-10
+  TotalAbsDiff = 2.005419e-09
+  MaxRelDiff   = 2.238118e-13
+
+END_LOG
+
+time_in_SBN3 = 1.896411e+01
+time_in_PosVel = 2.221763e+00
+time_in_MonoQ = 1.069360e+01
+ Elapsed: 39269.3
+Application 11985695 resources: utime ~15991s, stime ~3338s, Rss ~2835740, inblocks ~72645, outblocks ~49353
+
+
+39.2025 4494319.0 5.238689e-10 2.005419e-09 2.238118e-13
+Command = {aprun -n 42 -N 1 -d 12 ./lulesh/parcels/luleshparcels --hpx-threads=12 --hpx-network=pwc -n 1000 -x 48 -i 100}
+HPX PWC  Average over  5  =  38.837704
+HPX PWC  Ratio of (MPI time)/(hpx time) =  0.448236280909
+
+ + --------------------------------------------------------------------------
+ +        Job name: parcels_lulesh_1000
+ +          Job Id: 2782264.edique02
+ +          System: edison
+ +     Queued Time: Fri Apr 24 07:34:38 2015
+ +      Start Time: Fri Apr 24 10:29:09 2015
+ + Completion Time: Fri Apr 24 10:39:19 2015
+ +            User: benjmart
+ +        MOM Host: nid02818
+ +           Queue: reg_small
+ +  Req. Resources: mppnodect=42,mppnppn=24,mppwidth=1000,walltime=00:30:00
+ +  Used Resources: cput=00:00:03,energy_used=0,mem=15888kb,vmem=195872kb,walltime=00:10:12
+ +     Acct String: xpress
+ +   PBS_O_WORKDIR: /global/u1/b/benjmart/psaap_perf/halfcore
+ +     Submit Args: run_parcels_lulesh_1000.sh
+ + --------------------------------------------------------------------------
+

@@ -1,0 +1,16 @@
+28-05-2015:12:34:08
+edison_ugni, seqspawn(10000000), 1, 4.8866293
+edison_ugni, seqspawn(10000000), 2, 4.8793508
+edison_ugni, seqspawn(10000000), 4, 4.9908255
+edison_ugni, seqspawn(10000000), 8, 4.8849284
+edison_ugni, seqspawn(10000000), 16, 4.8690298
+edison_ugni, seqspawn(2000000), 1, 1.0266631
+edison_ugni, seqspawn(2000000), 2, 1.0085624
+edison_ugni, seqspawn(2000000), 4, 0.9833055
+edison_ugni, seqspawn(2000000), 8, 0.9658516
+edison_ugni, seqspawn(2000000), 16, 0.9673471
+edison_ugni, seqspawn(5000000), 1, 2.4386359
+edison_ugni, seqspawn(5000000), 2, 2.4626495
+edison_ugni, seqspawn(5000000), 4, 2.4653922
+edison_ugni, seqspawn(5000000), 8, 2.4404357
+edison_ugni, seqspawn(5000000), 16, 2.4369519

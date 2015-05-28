@@ -1,0 +1,16 @@
+28-05-2015:14:49:45
+stampede_mlx4_0, fib(30), 1, 0.2104931
+stampede_mlx4_0, fib(30), 2, 0.2199050
+stampede_mlx4_0, fib(30), 4, 0.2319043
+stampede_mlx4_0, fib(30), 8, 0.2525541
+stampede_mlx4_0, fib(30), 16, 0.2026370
+stampede_mlx4_0, fib(35), 1, 2.1634843
+stampede_mlx4_0, fib(35), 2, 2.0564392
+stampede_mlx4_0, fib(35), 4, 2.4343360
+stampede_mlx4_0, fib(35), 8, 2.0721760
+stampede_mlx4_0, fib(35), 16, 2.1230941
+stampede_mlx4_0, fib(37), 1, 6.8314846
+stampede_mlx4_0, fib(37), 2, 5.7126509
+stampede_mlx4_0, fib(37), 4, 5.7888864
+stampede_mlx4_0, fib(37), 8, 5.6666143
+stampede_mlx4_0, fib(37), 16, 6.1558815

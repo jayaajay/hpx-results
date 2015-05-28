@@ -1,0 +1,16 @@
+28-05-2015:12:34:08
+edison_ugni, fib(30), 1, 2.2557482
+edison_ugni, fib(30), 2, 2.2755424
+edison_ugni, fib(30), 4, 2.2777833
+edison_ugni, fib(30), 8, 2.2783351
+edison_ugni, fib(30), 16, 2.2914486
+edison_ugni, fib(35), 1, 25.1473600
+edison_ugni, fib(35), 2, 25.1740822
+edison_ugni, fib(35), 4, 25.1474119
+edison_ugni, fib(35), 8, 25.1851203
+edison_ugni, fib(35), 16, 25.3671944
+edison_ugni, fib(37), 1, 66.0758982
+edison_ugni, fib(37), 2, 66.1870671
+edison_ugni, fib(37), 4, 66.1144636
+edison_ugni, fib(37), 8, 66.0860774
+edison_ugni, fib(37), 16, 66.6160165

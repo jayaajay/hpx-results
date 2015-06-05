@@ -21,6 +21,3 @@
 04-06-2015, 1048576, 684.71
 04-06-2015, 2097152, 1370.27
 04-06-2015, 4194304, 2735.78
-04-06-2015, Application, 12888727 resources: utime ~2s, stime ~1s, Rss ~8608, inblocks ~769, outblocks ~95
-05-06-2015, Application, 12893141 exit codes: 124
-05-06-2015, Application, 12893141 resources: utime ~598s, stime ~1s, Rss ~7824, inblocks ~729, outblocks ~94

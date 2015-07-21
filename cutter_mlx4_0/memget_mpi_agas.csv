@@ -205,3 +205,14 @@ a88dfe1, 20-07-2015, 524288, 548.04
 a88dfe1, 20-07-2015, 1048576, 1157.72
 a88dfe1, 20-07-2015, 2097152, 3304.55
 a88dfe1, 20-07-2015, 4194304, 5245.35
+2a5eaf3, 21-07-2015, -------------------------------------------------------,
+2a5eaf3, 21-07-2015, Primary, job terminated normally, but 1 process returned
+2a5eaf3, 21-07-2015, a, non-zero exit code.. Per user-direction, the job has been aborted.
+2a5eaf3, 21-07-2015, -------------------------------------------------------,
+2a5eaf3, 21-07-2015, --------------------------------------------------------------------------,
+2a5eaf3, 21-07-2015, mpirun, detected that one or more processes exited with non-zero status, thus causing
+2a5eaf3, 21-07-2015, the, job to be terminated. The first process to do so was:
+2a5eaf3, 21-07-2015, ,
+2a5eaf3, 21-07-2015, Process, name: [[47708,1],0]
+2a5eaf3, 21-07-2015, Exit, code: 134
+2a5eaf3, 21-07-2015, --------------------------------------------------------------------------,

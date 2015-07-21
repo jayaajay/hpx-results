@@ -136,3 +136,6 @@ a88dfe1, 20-07-2015, 524288, 185.90
 a88dfe1, 20-07-2015, 1048576, 604.96
 a88dfe1, 20-07-2015, 2097152, 1405.98
 a88dfe1, 20-07-2015, 4194304, 3065.56
+2a5eaf3, 21-07-2015, Application, 14145677 exit codes: 134
+2a5eaf3, 21-07-2015, Application, 14145677 exit signals: Killed
+2a5eaf3, 21-07-2015, Application, 14145677 resources: utime ~0s, stime ~0s, Rss ~25104, inblocks ~615, outblocks ~188

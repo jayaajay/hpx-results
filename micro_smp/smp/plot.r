@@ -4,6 +4,8 @@ library(grid)
 library(gridExtra)
 library(scales)
 
+args <- commandArgs(trailingOnly = TRUE)
+pathfile <- args[1]
 
 # two side-by-side plots with a shared legend
 twoPlot <- function(p1, p2, title, cols=2) {
@@ -37,7 +39,7 @@ plot_theme <- theme(panel.grid.major = element_blank(),
                     text = element_text(size=10))
 
 # read the data
-data <- read.table("./hpx1.1.dat", comment.char="#", header=FALSE, fill=TRUE)
+data <- read.table(pathfile, comment.char="#", header=FALSE, fill=TRUE)
 names(data)[names(data)=="V1"]  <- "Name"
 names(data)[names(data)=="V2"]  <- "Input"
 names(data)[names(data)=="V3"]  <- "Variant"

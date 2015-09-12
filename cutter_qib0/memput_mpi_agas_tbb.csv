@@ -767,3 +767,27 @@ e079875, 30-08-2015, -----------------------------------------------------------
 05093d1, 09-09-2015, Process, name: [[30532,1],0]
 05093d1, 09-09-2015, Exit, code: 1
 05093d1, 09-09-2015, --------------------------------------------------------------------------,
+7f873e2, 11-09-2015, support, binding memory to the process location.
+7f873e2, 11-09-2015, ,
+7f873e2, 11-09-2015, Node:, cutter02
+7f873e2, 11-09-2015, ,
+7f873e2, 11-09-2015, This, usually is due to not having the required NUMA support installed
+7f873e2, 11-09-2015, on, the node. In some Linux distributions, the required support is
+7f873e2, 11-09-2015, contained, in the libnumactl and libnumactl-devel packages.
+7f873e2, 11-09-2015, This, is a warning only; your job will continue, though performance may be degraded.
+7f873e2, 11-09-2015, --------------------------------------------------------------------------,
+7f873e2, 11-09-2015, --------------------------------------------------------------------------,
+7f873e2, 11-09-2015, mpirun, was unable to launch the specified application as it could not access
+7f873e2, 11-09-2015, or, execute an executable:
+7f873e2, 11-09-2015, ,
+7f873e2, 11-09-2015, Executable:, ./memput
+7f873e2, 11-09-2015, Node:, cutter02
+7f873e2, 11-09-2015, ,
+7f873e2, 11-09-2015, while, attempting to start process rank 0.
+7f873e2, 11-09-2015, --------------------------------------------------------------------------,
+7f873e2, 12-09-2015, ,
+7f873e2, 12-09-2015, Executable:, ./memput
+7f873e2, 12-09-2015, Node:, cutter06
+7f873e2, 12-09-2015, ,
+7f873e2, 12-09-2015, while, attempting to start process rank 0.
+7f873e2, 12-09-2015, --------------------------------------------------------------------------,

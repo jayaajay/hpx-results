@@ -781,3 +781,73 @@ e079875, 30-08-2015, 4194304, 3443.99
 7f873e2, 12-09-2015, ,
 7f873e2, 12-09-2015, while, attempting to start process rank 0.
 7f873e2, 12-09-2015, --------------------------------------------------------------------------,
+7f873e2, 10-09-2015, support, binding memory to the process location.
+7f873e2, 10-09-2015, ,
+7f873e2, 10-09-2015, Node:, cutter02
+7f873e2, 10-09-2015, ,
+7f873e2, 10-09-2015, This, usually is due to not having the required NUMA support installed
+7f873e2, 10-09-2015, on, the node. In some Linux distributions, the required support is
+7f873e2, 10-09-2015, contained, in the libnumactl and libnumactl-devel packages.
+7f873e2, 10-09-2015, This, is a warning only; your job will continue, though performance may be degraded.
+7f873e2, 10-09-2015, --------------------------------------------------------------------------,
+7f873e2, 10-09-2015, --------------------------------------------------------------------------,
+7f873e2, 10-09-2015, WARNING:, One or more nonexistent OpenFabrics devices/ports were
+7f873e2, 10-09-2015, specified:,
+7f873e2, 10-09-2015, ,
+7f873e2, 10-09-2015, Host:, cutter02
+7f873e2, 10-09-2015, MCA, parameter: mca_btl_if_include
+7f873e2, 10-09-2015, Nonexistent, entities: mlx4_0
+7f873e2, 10-09-2015, ,
+7f873e2, 10-09-2015, These, entities will be ignored. You can disable this warning by
+7f873e2, 10-09-2015, setting, the btl_openib_warn_nonexistent_if MCA parameter to 0.
+7f873e2, 10-09-2015, --------------------------------------------------------------------------,
+7f873e2, 10-09-2015, -------------------------------------------------------,
+7f873e2, 10-09-2015, Primary, job terminated normally, but 1 process returned
+7f873e2, 10-09-2015, a, non-zero exit code.. Per user-direction, the job has been aborted.
+7f873e2, 11-09-2015, ,
+7f873e2, 11-09-2015, Executable:, ./memget
+7f873e2, 11-09-2015, Node:, cutter10
+7f873e2, 11-09-2015, ,
+7f873e2, 11-09-2015, while, attempting to start process rank 0.
+7f873e2, 11-09-2015, --------------------------------------------------------------------------,
+7f873e2, 12-09-2015, support, binding memory to the process location.
+7f873e2, 12-09-2015, ,
+7f873e2, 12-09-2015, Node:, cutter02
+7f873e2, 12-09-2015, ,
+7f873e2, 12-09-2015, This, usually is due to not having the required NUMA support installed
+7f873e2, 12-09-2015, on, the node. In some Linux distributions, the required support is
+7f873e2, 12-09-2015, contained, in the libnumactl and libnumactl-devel packages.
+7f873e2, 12-09-2015, This, is a warning only; your job will continue, though performance may be degraded.
+7f873e2, 12-09-2015, --------------------------------------------------------------------------,
+7f873e2, 12-09-2015, --------------------------------------------------------------------------,
+7f873e2, 12-09-2015, mpirun, was unable to launch the specified application as it could not access
+7f873e2, 12-09-2015, or, execute an executable:
+7f873e2, 12-09-2015, ,
+7f873e2, 12-09-2015, Executable:, ./memget
+7f873e2, 12-09-2015, Node:, cutter02
+7f873e2, 12-09-2015, ,
+7f873e2, 12-09-2015, while, attempting to start process rank 0.
+7f873e2, 12-09-2015, --------------------------------------------------------------------------,
+7f873e2, 18-09-2015, 1, 4.14
+7f873e2, 18-09-2015, 2, 4.16
+7f873e2, 18-09-2015, 4, 4.17
+7f873e2, 18-09-2015, 8, 4.17
+7f873e2, 18-09-2015, 16, 4.16
+7f873e2, 18-09-2015, 32, 4.17
+7f873e2, 18-09-2015, 64, 4.17
+7f873e2, 18-09-2015, 128, 4.18
+7f873e2, 18-09-2015, 256, 4.46
+7f873e2, 18-09-2015, 512, 5.01
+7f873e2, 18-09-2015, 1024, 6.00
+7f873e2, 18-09-2015, 2048, 8.23
+7f873e2, 18-09-2015, 4096, 12.47
+7f873e2, 18-09-2015, 8192, 15.81
+7f873e2, 18-09-2015, 16384, 22.52
+7f873e2, 18-09-2015, 32768, 36.03
+7f873e2, 18-09-2015, 65536, 62.81
+7f873e2, 18-09-2015, 131072, 116.46
+7f873e2, 18-09-2015, 262144, 223.76
+7f873e2, 18-09-2015, 524288, 438.39
+7f873e2, 18-09-2015, 1048576, 867.70
+7f873e2, 18-09-2015, 2097152, 1726.48
+7f873e2, 18-09-2015, 4194304, 3443.36

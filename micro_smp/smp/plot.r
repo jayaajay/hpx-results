@@ -86,7 +86,7 @@ doPlotWS <- function(data) {
   fp <- ggplot(data, aes(x=Input,y=Median,group=Variant))
   fp <- fp + geom_errorbar(aes(x=Cores,ymin=Min, ymax=Max,color=Variant), width=0.2)
   fp <- fp + geom_line(aes(color=Variant),size=0.6) + geom_point(aes(shape=Variant,color=Variant),size=2)
-  fp <- fp + scale_y_log10()
+#  fp <- fp + scale_y_log10()
   fp <- fp + ylab("Time taken (s)")
   fp <- fp + plot_theme + scale_colour_tableau()
   return(fp)
@@ -104,7 +104,7 @@ doPlotWSFacet <- function(data) {
 #fp1 <- doPlotSSFacet(fibdata)
 
 fibdata <- sanitizeData(subset(data, (Input == 37) & (Cores <= 16) & (Variant != 'cilk')), "parfib")
-fp1 <- doPlotSS(fibdata, "fib(37)") + scale_y_log10()
+fp1 <- doPlotSS(fibdata, "fib(37)") 
 ggsave(fp1, file="fib.pdf", width=4, height=3.75)
 
 
@@ -125,7 +125,7 @@ pardata <- sanitizeData(subset(data, (Cores == 16)), "parspawn")
 pp1 <- doPlotWS(pardata)+ xlab("Number of Tasks")
 
 pardata <- sanitizeData(subset(data, (Input == 10000000) & (Cores <= 16) & (Variant != 'cilk')), "parspawn")
-pp2 <- doPlotSS(pardata, "parspawn(10000000)") + scale_y_log10()
+pp2 <- doPlotSS(pardata, "parspawn(10000000)")
 ggsave(pp2, file="par.pdf", width=4, height=3.75)
 
 #pdf(file="par.pdf", width=8, height=3.5, onefile=FALSE)

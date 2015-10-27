@@ -56,17 +56,18 @@ sanitizeData <- function(data, n) {
   d <- subset(data, grepl(n, Name))
   levels(d$Variant)[levels(d$Variant)=="cilk"] <- "Cilk"
   levels(d$Variant)[levels(d$Variant)=="hpx"] <- "HPX 5"
-  levels(d$Variant)[levels(d$Variant)=="omp"] <- "Open MP"
+  levels(d$Variant)[levels(d$Variant)=="omp"] <- "Open MP (Tasks)"
   levels(d$Variant)[levels(d$Variant)=="qthreads"] <- "Qthreads"
-  levels(d$Variant)[levels(d$Variant)=="tbb"] <- "TBB"
+  levels(d$Variant)[levels(d$Variant)=="tbb"] <- "TBB (Tasks)"
   return(d)
 }
 
 # do a single strong-scaling plot
 doPlotSS <- function(data, title) {
-  fp <- ggplot(data, aes(x=Cores,y=Median,group=Variant))
+  fp <- ggplot(data, aes(x=Cores,y=Median,group=Variant)) + guides(col=guide_legend(nrow=2,byrow=TRUE))
   fp <- fp + geom_errorbar(aes(x=Cores,ymin=Min, ymax=Max,color=Variant), width=0.1)
   fp <- fp + geom_line(aes(color=Variant),size=0.6) + geom_point(aes(shape=Variant,color=Variant),size=2)
+  fp <- fp + geom_text(aes(label=format(Median, digits=2),color=Variant),hjust=-0.1,vjust=-0.7,size=1.6)
 #  fp <- fp + scale_x_continuous(trans=log2_trans(),breaks=trans_breaks("log2", function(x) 2^x))
   fp <- fp + ggtitle(title)
   fp <- fp + xlab("Cores") + ylab("Time taken (s)")
@@ -103,17 +104,17 @@ doPlotWSFacet <- function(data) {
 #fibdata <- sanitizeData(subset(data, (Input == 30) | (Input == 35) | (Input == 37)), "fib")
 #fp1 <- doPlotSSFacet(fibdata)
 
-fibdata <- sanitizeData(subset(data, (Input == 37) & (Cores <= 16) & (Variant != 'cilk')), "parfib")
-fp1 <- doPlotSS(fibdata, "fib(37)") 
+fibdata <- sanitizeData(subset(data, (Input == 37) & (Variant != 'cilk')), "parfib")
+fp1 <- doPlotSS(fibdata, "fib(37)")
 ggsave(fp1, file="fib.pdf", width=4, height=3.75)
 
 
 # Plot seqspawn results
-seqdata <- sanitizeData(subset(data, (Cores == 16)), "seqspawn")
-sp1 <- doPlotWS(seqdata) + xlab("Number of Tasks")
+#seqdata <- sanitizeData(subset(data, (Cores == 16)), "seqspawn")
+#sp1 <- doPlotWS(seqdata) + xlab("Number of Tasks")
 
-seqdata <- sanitizeData(subset(data, (Input == 10000000) & (Cores <= 16) & (Variant != 'cilk')), "seqspawn")
-sp2 <- doPlotSS(seqdata, "seqspawn(10000000)")
+seqdata <- sanitizeData(subset(data, (Input == 10000000) & (Variant != 'cilk')), "seqspawn")
+sp2 <- doPlotSS(seqdata, "seqspawn(10000000)") 
 ggsave(sp2, file="seq.pdf", width=4, height=3.75)
 
 #pdf(file="seq.pdf", width=8, height=3.5, onefile=FALSE)
@@ -121,10 +122,10 @@ ggsave(sp2, file="seq.pdf", width=4, height=3.75)
 #dev.off()
 
 # Plot parspawn results
-pardata <- sanitizeData(subset(data, (Cores == 16)), "parspawn")
-pp1 <- doPlotWS(pardata)+ xlab("Number of Tasks")
+#pardata <- sanitizeData(subset(data, (Cores == 16)), "parspawn")
+#pp1 <- doPlotWS(pardata)+ xlab("Number of Tasks")
 
-pardata <- sanitizeData(subset(data, (Input == 10000000) & (Cores <= 16) & (Variant != 'cilk')), "parspawn")
+pardata <- sanitizeData(subset(data, (Input == 10000000) & (Variant != 'cilk')), "parspawn")
 pp2 <- doPlotSS(pardata, "parspawn(10000000)")
 ggsave(pp2, file="par.pdf", width=4, height=3.75)
 

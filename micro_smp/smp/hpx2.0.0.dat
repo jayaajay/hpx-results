@@ -1,13 +1,13 @@
 # TestName Variant NumThreads   MinTime MedianTime MaxTime  Productivity1 Productivity2 Productivity3
 #    
-# Tue Nov 24 17:28:14 EST 2015
+# Wed Nov 25 00:50:02 EST 2015
 # Linux cutter-m 3.19.0-28-generic #30~14.04.1-Ubuntu SMP Tue Sep 1 09:32:55 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 # Ran by: hpx5 
 # Determined machine to have 1 hardware threads.
-# Default topology: pid 26310's current affinity list: 0-15
+# Default topology: pid 20622's current affinity list: 0-15
 # 
 # Running each test for 5 trial(s).
-# Git_Branch: remotes/origin/master
+# Git_Branch: master
 # Git_Hash: 9fb3858d390f1245d400ff32489a793cf91b9d5d
 # Git_Depth: 52
 #  Path registry: fromList []

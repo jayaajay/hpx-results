@@ -1,0 +1,41 @@
+# TestName Variant NumThreads   MinTime MedianTime MaxTime  Productivity1 Productivity2 Productivity3
+#    
+# Sun Jan 31 18:54:31 EST 2016
+# Linux cutter-m 3.19.0-28-generic #30~14.04.1-Ubuntu SMP Tue Sep 1 09:32:55 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+# Ran by: hpx5 
+# Determined machine to have 1 hardware threads.
+# Default topology: pid 35553's current affinity list: 0-15
+# 
+# Running each test for 5 trial(s).
+# Git_Branch: master
+# Git_Hash: b9a87007512ff814a02341236334687b79e715ff
+# Git_Depth: 60
+#  Path registry: fromList []
+parfib                              30                   cilk     2    0.0693194 0.0902421 0.0918225   0 0 0
+parfib                              30                   cilk     4    0.0298734 0.0356791 0.0470897   0 0 0
+parfib                              30                   cilk     8    0.0126756 0.0139275 0.0157795   0 0 0
+parfib                              30                   cilk     10   0.0102928 0.0106706 0.0116112   0 0 0
+parfib                              30                   cilk     12   0.0092174 0.0103648 0.023004   0 0 0
+parfib                              30                   cilk     14   0.0086335 0.009281 0.0127458   0 0 0
+parfib                              30                   cilk     16   0.0077538 0.0081915 0.0201705   0 0 0
+parfib                              35                   cilk     2    0.4544146 0.4586607 0.5268123   0 0 0
+parfib                              35                   cilk     4    0.2305553 0.2315592 0.2802409   0 0 0
+parfib                              35                   cilk     8    0.1205196 0.1213726 0.1334155   0 0 0
+parfib                              35                   cilk     10   0.0982358 0.0991968 0.1003258   0 0 0
+parfib                              35                   cilk     12   0.0838133 0.0855305 0.0870315   0 0 0
+parfib                              35                   cilk     14   0.0732926 0.0734368 0.0772877   0 0 0
+parfib                              35                   cilk     16   0.0657635 0.0683409 0.0874589   0 0 0
+parfib                              37                   cilk     2    1.2029023 1.2217913 1.2421453   0 0 0
+parfib                              37                   cilk     4    0.6086707 0.6118676 0.6375675   0 0 0
+parfib                              37                   cilk     8    0.3118987 0.3151773 0.3164751   0 0 0
+parfib                              37                   cilk     10   0.2565237 0.2572204 0.2621658   0 0 0
+parfib                              37                   cilk     12   0.2151745 0.2160991 0.2165968   0 0 0
+parfib                              37                   cilk     14   0.1891328 0.1894184 0.1937284   0 0 0
+parfib                              37                   cilk     16   0.1695148 0.1804692 0.1923829   0 0 0
+# parfib                              30                   hpx      2    ALL_ERRORS
+# parfib                              30                   hpx      4    ALL_ERRORS
+# parfib                              30                   hpx      8    ALL_ERRORS
+# parfib                              30                   hpx      10   ALL_ERRORS
+# parfib                              30                   hpx      12   ALL_ERRORS
+# parfib                              30                   hpx      14   ALL_ERRORS
+# parfib                              30                   hpx      16   ALL_ERRORS

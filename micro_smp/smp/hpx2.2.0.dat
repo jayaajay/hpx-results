@@ -1,10 +1,10 @@
 # TestName Variant NumThreads   MinTime MedianTime MaxTime  Productivity1 Productivity2 Productivity3
 #    
-# Thu Apr 21 17:37:27 EDT 2016
-# Linux cutter11 3.19.0-28-generic #30~14.04.1-Ubuntu SMP Tue Sep 1 09:32:55 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+# Thu Apr 21 17:50:43 EDT 2016
+# Linux cutter07 3.19.0-28-generic #30~14.04.1-Ubuntu SMP Tue Sep 1 09:32:55 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 # Ran by: hpx5 
 # Determined machine to have 1 hardware threads.
-# Default topology: pid 3069's current affinity list: 0-15
+# Default topology: pid 3035's current affinity list: 0-15
 # 
 # Running each test for 5 trial(s).
 # Git_Branch: master

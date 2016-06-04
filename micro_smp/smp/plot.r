@@ -59,6 +59,8 @@ sanitizeData <- function(data, n) {
   levels(d$Variant)[levels(d$Variant)=="omp"] <- "Open MP (Tasks)"
   levels(d$Variant)[levels(d$Variant)=="qthreads"] <- "Qthreads"
   levels(d$Variant)[levels(d$Variant)=="tbb"] <- "TBB (Tasks)"
+  levels(d$Variant)[levels(d$Variant)=="ocr"] <- "OCR"
+  levels(d$Variant)[levels(d$Variant)=="charm++"] <- "Charm++"
   return(d)
 }
 
@@ -104,8 +106,8 @@ doPlotWSFacet <- function(data) {
 #fibdata <- sanitizeData(subset(data, (Input == 30) | (Input == 35) | (Input == 37)), "fib")
 #fp1 <- doPlotSSFacet(fibdata)
 
-fibdata <- sanitizeData(subset(data, (Input == 37) & (Variant != 'cilk')), "parfib")
-fp1 <- doPlotSS(fibdata, "fib(37)")
+fibdata <- sanitizeData(subset(data, (Input == 30) & (Variant != 'cilk')), "parfib")
+fp1 <- doPlotSS(fibdata, "fib(30)")
 ggsave(fp1, file="fib.pdf", width=4, height=3.75)
 
 
@@ -113,8 +115,8 @@ ggsave(fp1, file="fib.pdf", width=4, height=3.75)
 #seqdata <- sanitizeData(subset(data, (Cores == 16)), "seqspawn")
 #sp1 <- doPlotWS(seqdata) + xlab("Number of Tasks")
 
-seqdata <- sanitizeData(subset(data, (Input == 10000000) & (Variant != 'cilk')), "seqspawn")
-sp2 <- doPlotSS(seqdata, "seqspawn(10000000)") 
+seqdata <- sanitizeData(subset(data, (Input == 2000000) & (Variant != 'cilk')), "seqspawn")
+sp2 <- doPlotSS(seqdata, "seqspawn(2000000)") 
 ggsave(sp2, file="seq.pdf", width=4, height=3.75)
 
 #pdf(file="seq.pdf", width=8, height=3.5, onefile=FALSE)
@@ -125,8 +127,8 @@ ggsave(sp2, file="seq.pdf", width=4, height=3.75)
 #pardata <- sanitizeData(subset(data, (Cores == 16)), "parspawn")
 #pp1 <- doPlotWS(pardata)+ xlab("Number of Tasks")
 
-pardata <- sanitizeData(subset(data, (Input == 10000000) & (Variant != 'cilk')), "parspawn")
-pp2 <- doPlotSS(pardata, "parspawn(10000000)")
+pardata <- sanitizeData(subset(data, (Input == 2000000) & (Variant != 'cilk') & (Variant != 'ocr')), "parspawn")
+pp2 <- doPlotSS(pardata, "parspawn(2000000)")
 ggsave(pp2, file="par.pdf", width=4, height=3.75)
 
 #pdf(file="par.pdf", width=8, height=3.5, onefile=FALSE)
